@@ -16,6 +16,7 @@ namespace bmx
             std::vector<std::vector<Type> > _block_two;
             std::size_t _size_one;
             std::size_t _size_two;
+            std::size_t _max_size;
         public:
             block_matrix() {}
             
@@ -26,6 +27,7 @@ namespace bmx
                 {
                     this->_size_one = _size_one;
                     this->_size_two = _size_two;
+                    this->_max_size = _size_one + _size_two;
                 }
             }
 
@@ -142,6 +144,43 @@ namespace bmx
                         this->_block_two[i][j] *= b.get_block_two_values(i, j);
                     }
                 }
+            }
+    
+            void print_this_shit() {
+                std::string block_one_zeros = "";
+                std::string block_two_zeros = "";
+                for(int i = 0; i < (int(_max_size) - int(_size_two)); ++i) {
+                    block_one_zeros.push_back('0');
+                    block_one_zeros.push_back(' ');
+                }
+
+                for(int i = 0; i < (int(_max_size) - int(_size_one)); ++i) {
+                    block_two_zeros.push_back('0');
+                    block_two_zeros.push_back(' ');
+                }
+
+                for(int i = 0; i < _size_one; ++i) {
+                    for(int j = 0; j < _block_one.at(i).size(); ++j) {
+                        std::cout << _block_one.at(i).at(j) << " ";
+                    }
+                    
+                    std::cout << block_one_zeros << std::endl;
+                }
+
+                for(int i = 0; i < _size_two; ++i) {
+                    std::cout << block_two_zeros;
+
+                    for(int j = 0; j < _block_two.at(i).size(); ++j) {
+                        std::cout << _block_two.at(i).at(j) << " ";
+                    }
+                    
+                    std::cout << std::endl;
+                }
+            }
+    
+            Type get_element(const int index_x, const int index_y) {
+                if(index_x <= _size_one && index_y <= _size_two) return _block_one.at(i).at(j);
+                else if(index_x > _size_one && index_x < _max_size && index_y > _size_one && )
             }
     };        
 }

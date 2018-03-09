@@ -47,10 +47,8 @@ void progress(int c)
         case 2:
             std::cout << "Give the size and the elements of the second matrix\n";
             sum_two_bm();
-            std::cout << "The first matrix after the sum: ";
-            bm_one.write_out_matrix1();
-            std::cout<< '\n';
-            bm_one.write_out_matrix2();
+            std::cout << "The matrix after the sum: ";
+            bm_one.print_this_shit();
             break;
 
         case 3:

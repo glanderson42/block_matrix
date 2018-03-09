@@ -4,12 +4,18 @@
 
 int main()
 {
-    try
-    { 
-        progress(menu());
-    }
-    catch(const std::exception& exception)
+    bool run = true;
+    while(run)
     {
-        if(exception.what() == "choice") menu();
-    } 
+    	try
+    	{ 
+        	
+        	
+    	}
+    	catch(const std::exception& exception)
+    	{
+        	//if(exception.what() == "choice") menu();
+    	} 	
+    }
+    
 }
