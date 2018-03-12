@@ -9,12 +9,19 @@ int main()
     {
     	try
     	{ 
-        	
-        	
+        	progress(menu());
     	}
     	catch(const std::exception& exception)
     	{
-        	//if(exception.what() == "choice") menu();
+        	if(exception.what() == "choice") menu();
+        	else if(exception.what() == "invalid_size") {
+        		std::cerr << "Invalid size!";
+        		menu();
+        	}
+        	else if(exception.what() == "invalid_index") {
+        		std::cerr << "Invalid index!";
+        		menu();
+        	}
     	} 	
     }
     

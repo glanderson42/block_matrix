@@ -152,13 +152,11 @@ namespace bmx
                 for(int i = 0; i < (int(_max_size) - int(_size_two)); ++i) {
                     block_one_zeros.push_back('0');
                     block_one_zeros.push_back(' ');
-                    std::printf("asd");
                 }
 
                 for(int i = 0; i < (int(_max_size) - int(_size_one)); ++i) {
                     block_two_zeros.push_back('0');
                     block_two_zeros.push_back(' ');
-                    std::printf("Asd");
                 }
 
                 for(int i = 0; i < _size_one; ++i) {

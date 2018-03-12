@@ -47,14 +47,6 @@ void multi_two_bm() {
 }
 
 void print_matrix() { 
-    std::size_t size_one;
-    std::cin >> size_one;
-    bm_one.set_size_one(size_one);
-    std::size_t size_two;
-    std::cin >> size_two;
-    bm_one.set_size_two(size_two);
-    bm_one.set_block_one();
-    bm_one.set_block_two();
     bm_one.print_this_shit();
 }
 
