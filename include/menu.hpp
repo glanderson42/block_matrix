@@ -8,72 +8,72 @@
 
 bmx::block_matrix<int> bm_one;
 bmx::block_matrix<int> bm_two;
+bool is_exist = false;
 
 void make_new_bm()
 {
     std::size_t size_one;
     std::cin >> size_one;
-    bm_one.set_size_one(size_one);
     std::size_t size_two;
     std::cin >> size_two;
-    bm_one.set_size_two(size_two);
-    bm_one.set_block_one();
-    bm_one.set_block_two();
+    bm_one.set_block_one(size_one);
+    bm_one.set_block_two(size_two);
+    is_exist = true;
 }
 
 void sum_two_bm()
 {
-    std::size_t size_one;
-    std::cin >> size_one;
-    std::size_t size_two;
-    std::cin >> size_two;
-    bm_two.set_size_two(size_one);
-    bm_two.set_size_two(size_two);
-    bm_two.set_block_one();
-    bm_two.set_block_two();
-    bm_one.sum(bm_two);
+    if(is_exist)
+    {
+        std::size_t size_one;
+        std::cin >> size_one;
+        std::size_t size_two;
+        std::cin >> size_two;
+        bm_two.set_block_one(size_one);
+        bm_two.set_block_two(size_two);
+        bm_one.sum(bm_two);
+    } else {
+        make_new_bm();
+        sum_two_bm();
+    }   
 }
 
 void multi_two_bm() { 
-    std::size_t size_one;
-    std::cin >> size_one;
-    std::size_t size_two;
-    std::cin >> size_two;
-    bm_two.set_size_two(size_one);
-    bm_two.set_size_two(size_two);
-    bm_two.set_block_one();
-    bm_two.set_block_two();
-    bm_one.multiplication(bm_two);
-}
+    if(is_exist) {
+       std::size_t size_one;
+       std::cin >> size_one;
+       std::size_t size_two;
+       std::cin >> size_two;
+       bm_two.set_block_one(size_one);
+       bm_two.set_block_two(size_two);
+       bm_one.multiplication(bm_two);
+    } else {
+        make_new_bm();
+        multi_two_bm();
+    }   
+} 
 
 void print_matrix() { 
-    std::size_t size_one;
-    std::cin >> size_one;
-    bm_one.set_size_one(size_one);
-    std::size_t size_two;
-    std::cin >> size_two;
-    bm_one.set_size_two(size_two);
-    bm_one.set_block_one();
-    bm_one.set_block_two();
-    bm_one.print_this_shit();
+    if(is_exist)
+        bm_one.print_this_shit();
+    else {
+        make_new_bm();
+        print_matrix();
+    }
 }
 
 
 void get_element()  
 {
-    std::size_t size_one;
-    std::cin >> size_one;
-    bm_one.set_size_one(size_one);
-    std::size_t size_two;
-    std::cin >> size_two;
-    bm_one.set_size_two(size_two);
-    bm_one.set_block_one();
-    bm_one.set_block_two();
-    int x, y;
-    std::cin >> x;
-    std::cin >> y;
-   // auto c = bm_one.translate_indices(x,y);
-   // std::cout << c;
+    if(is_exist) {
+        int x, y;
+        std::cin >> x;
+        std::cin >> y;
+        std::cout << bm_one.get(x, y) << std::endl;
+    } else {
+        make_new_bm();
+        get_element();
+    }    
 }
 
 int menu()
@@ -109,7 +109,7 @@ void progress(int c)
         case 2:
             std::cout << "Give the size and the elements of the second matrix\n";
             sum_two_bm();
-            std::cout << "The matrix after the sum: ";
+            std::cout << "The matrix after the sum: \n";
             bm_one.print_this_shit();
             break;
 
@@ -122,6 +122,7 @@ void progress(int c)
             break;
 
         case 5:
+            std::cout << "Index is start from 0!\n";
             get_element();
             break;
 

@@ -4,8 +4,7 @@
 
 int main()
 {
-    bool run = true;
-    while(run)
+    while(true)
     {
     	try
     	{ 
