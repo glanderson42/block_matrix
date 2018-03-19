@@ -20,6 +20,9 @@ int main()
         	else if(exception.what() == "invalid_index") {
         		std::cerr << "Invalid index!";
         		menu();
+        	} else if(exception.what() == "invalid_matrix") {
+        		std::cerr << "Invalid matrix!";
+        		menu();
         	}
     	} 	
     }

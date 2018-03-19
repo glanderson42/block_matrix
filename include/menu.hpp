@@ -55,7 +55,7 @@ void multi_two_bm() {
 
 void print_matrix() { 
     if(is_exist)
-        bm_one.print_this_shit();
+        bm_one.print();
     else {
         make_new_bm();
         print_matrix();
@@ -110,10 +110,11 @@ void progress(int c)
             std::cout << "Give the size and the elements of the second matrix\n";
             sum_two_bm();
             std::cout << "The matrix after the sum: \n";
-            bm_one.print_this_shit();
+            bm_one.print();
             break;
 
         case 3:
+            std::cout << "Give the size and the elemens the new block matrix\n";
             multi_two_bm();
             break;
 
@@ -122,6 +123,7 @@ void progress(int c)
             break;
 
         case 5:
+            std::cout << "Give the x and y coordinate!\n";
             std::cout << "Index is start from 0!\n";
             get_element();
             break;

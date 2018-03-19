@@ -35,7 +35,7 @@ namespace exception
     {
         virtual const char* what() const throw()
         {
-            return "invalid size";
+            return "invalid_size";
         }
     };
 }

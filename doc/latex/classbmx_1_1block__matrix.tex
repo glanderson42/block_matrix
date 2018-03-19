@@ -1,0 +1,199 @@
+\hypertarget{classbmx_1_1block__matrix}{}\section{bmx\+:\+:block\+\_\+matrix$<$ Type $>$ Class Template Reference}
+\label{classbmx_1_1block__matrix}\index{bmx\+::block\+\_\+matrix$<$ Type $>$@{bmx\+::block\+\_\+matrix$<$ Type $>$}}
+
+
+{\ttfamily \#include $<$block\+\_\+matrix.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbmx_1_1block__matrix_a04826c7a53ad8da87b0e9eede8af679a}{block\+\_\+matrix}} ()
+\item 
+\mbox{\hyperlink{classbmx_1_1block__matrix_a8356cfaa8cc00082ec82070f4143b6fa}{block\+\_\+matrix}} (const std\+::size\+\_\+t \+\_\+size\+\_\+one, const std\+::size\+\_\+t \+\_\+size\+\_\+two)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classbmx_1_1block__matrix_afe5002a570f6c7ae455add2ab3ad3c87}{size}} ()
+\item 
+void \mbox{\hyperlink{classbmx_1_1block__matrix_a3708a438e204c7479da201365e088212}{set\+\_\+block\+\_\+one}} (std\+::size\+\_\+t size\+\_\+one, Type element)
+\item 
+void \mbox{\hyperlink{classbmx_1_1block__matrix_a1233de84f6828b5b3dd80af76c0688bd}{set\+\_\+block\+\_\+two}} (std\+::size\+\_\+t size\+\_\+two, Type element)
+\item 
+void \mbox{\hyperlink{classbmx_1_1block__matrix_a010884e7b07582cd28e1de9d58521b62}{write\+\_\+out\+\_\+matrix1}} ()
+\item 
+void \mbox{\hyperlink{classbmx_1_1block__matrix_a5e758f4af743778dedce4ce05f95a14a}{write\+\_\+out\+\_\+matrix2}} ()
+\item 
+Type \mbox{\hyperlink{classbmx_1_1block__matrix_ab8c567ac66dabb15646b951fe55f30b6}{get\+\_\+block\+\_\+one\+\_\+values}} (const int i, const int j)
+\item 
+Type \mbox{\hyperlink{classbmx_1_1block__matrix_a4737a14c292308edbf16d71b3b6240a2}{get\+\_\+block\+\_\+two\+\_\+values}} (const int i, const int j)
+\item 
+void \mbox{\hyperlink{classbmx_1_1block__matrix_aa6200f28e371684979facaf7494bd755}{sum}} (\mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$ \&b)
+\item 
+void \mbox{\hyperlink{classbmx_1_1block__matrix_a5a6c1c462b530c2dcf8bc24a0e6dc85c}{multiplication}} (\mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$ \&b)
+\item 
+void \mbox{\hyperlink{classbmx_1_1block__matrix_a6e7219a6e1c65c1ddcc1a64cdab56223}{print}} ()
+\item 
+int \mbox{\hyperlink{classbmx_1_1block__matrix_a3a4e7a297cb5e09564f0a3b74cbdfaec}{get}} (const int x, const int y) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Type = int$>$\newline
+class bmx\+::block\+\_\+matrix$<$ Type $>$}
+
+
+
+Definition at line 12 of file block\+\_\+matrix.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a04826c7a53ad8da87b0e9eede8af679a}\label{classbmx_1_1block__matrix_a04826c7a53ad8da87b0e9eede8af679a}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!block\+\_\+matrix@{block\+\_\+matrix}}
+\index{block\+\_\+matrix@{block\+\_\+matrix}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{block\+\_\+matrix()}{block\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+\mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::\mbox{\hyperlink{classbmx_1_1block__matrix}{block\+\_\+matrix}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a8356cfaa8cc00082ec82070f4143b6fa}\label{classbmx_1_1block__matrix_a8356cfaa8cc00082ec82070f4143b6fa}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!block\+\_\+matrix@{block\+\_\+matrix}}
+\index{block\+\_\+matrix@{block\+\_\+matrix}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{block\+\_\+matrix()}{block\_matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+\mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::\mbox{\hyperlink{classbmx_1_1block__matrix}{block\+\_\+matrix}} (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{\+\_\+size\+\_\+one,  }\item[{const std\+::size\+\_\+t}]{\+\_\+size\+\_\+two }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 22 of file block\+\_\+matrix.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a3a4e7a297cb5e09564f0a3b74cbdfaec}\label{classbmx_1_1block__matrix_a3a4e7a297cb5e09564f0a3b74cbdfaec}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!get@{get}}
+\index{get@{get}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+int \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::get (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 190 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_ab8c567ac66dabb15646b951fe55f30b6}\label{classbmx_1_1block__matrix_ab8c567ac66dabb15646b951fe55f30b6}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!get\+\_\+block\+\_\+one\+\_\+values@{get\+\_\+block\+\_\+one\+\_\+values}}
+\index{get\+\_\+block\+\_\+one\+\_\+values@{get\+\_\+block\+\_\+one\+\_\+values}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{get\+\_\+block\+\_\+one\+\_\+values()}{get\_block\_one\_values()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+Type \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::get\+\_\+block\+\_\+one\+\_\+values (\begin{DoxyParamCaption}\item[{const int}]{i,  }\item[{const int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a4737a14c292308edbf16d71b3b6240a2}\label{classbmx_1_1block__matrix_a4737a14c292308edbf16d71b3b6240a2}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!get\+\_\+block\+\_\+two\+\_\+values@{get\+\_\+block\+\_\+two\+\_\+values}}
+\index{get\+\_\+block\+\_\+two\+\_\+values@{get\+\_\+block\+\_\+two\+\_\+values}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{get\+\_\+block\+\_\+two\+\_\+values()}{get\_block\_two\_values()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+Type \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::get\+\_\+block\+\_\+two\+\_\+values (\begin{DoxyParamCaption}\item[{const int}]{i,  }\item[{const int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 102 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a5a6c1c462b530c2dcf8bc24a0e6dc85c}\label{classbmx_1_1block__matrix_a5a6c1c462b530c2dcf8bc24a0e6dc85c}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!multiplication@{multiplication}}
+\index{multiplication@{multiplication}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{multiplication()}{multiplication()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+void \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::multiplication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 132 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a6e7219a6e1c65c1ddcc1a64cdab56223}\label{classbmx_1_1block__matrix_a6e7219a6e1c65c1ddcc1a64cdab56223}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!print@{print}}
+\index{print@{print}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+void \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 151 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a3708a438e204c7479da201365e088212}\label{classbmx_1_1block__matrix_a3708a438e204c7479da201365e088212}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!set\+\_\+block\+\_\+one@{set\+\_\+block\+\_\+one}}
+\index{set\+\_\+block\+\_\+one@{set\+\_\+block\+\_\+one}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{set\+\_\+block\+\_\+one()}{set\_block\_one()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+void \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::set\+\_\+block\+\_\+one (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{size\+\_\+one,  }\item[{Type}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a1233de84f6828b5b3dd80af76c0688bd}\label{classbmx_1_1block__matrix_a1233de84f6828b5b3dd80af76c0688bd}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!set\+\_\+block\+\_\+two@{set\+\_\+block\+\_\+two}}
+\index{set\+\_\+block\+\_\+two@{set\+\_\+block\+\_\+two}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{set\+\_\+block\+\_\+two()}{set\_block\_two()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+void \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::set\+\_\+block\+\_\+two (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{size\+\_\+two,  }\item[{Type}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 54 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_afe5002a570f6c7ae455add2ab3ad3c87}\label{classbmx_1_1block__matrix_afe5002a570f6c7ae455add2ab3ad3c87}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!size@{size}}
+\index{size@{size}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 32 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_aa6200f28e371684979facaf7494bd755}\label{classbmx_1_1block__matrix_aa6200f28e371684979facaf7494bd755}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!sum@{sum}}
+\index{sum@{sum}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+void \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::sum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 113 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a010884e7b07582cd28e1de9d58521b62}\label{classbmx_1_1block__matrix_a010884e7b07582cd28e1de9d58521b62}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!write\+\_\+out\+\_\+matrix1@{write\+\_\+out\+\_\+matrix1}}
+\index{write\+\_\+out\+\_\+matrix1@{write\+\_\+out\+\_\+matrix1}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{write\+\_\+out\+\_\+matrix1()}{write\_out\_matrix1()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+void \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::write\+\_\+out\+\_\+matrix1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 70 of file block\+\_\+matrix.\+hpp.
+
+\mbox{\Hypertarget{classbmx_1_1block__matrix_a5e758f4af743778dedce4ce05f95a14a}\label{classbmx_1_1block__matrix_a5e758f4af743778dedce4ce05f95a14a}} 
+\index{bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}!write\+\_\+out\+\_\+matrix2@{write\+\_\+out\+\_\+matrix2}}
+\index{write\+\_\+out\+\_\+matrix2@{write\+\_\+out\+\_\+matrix2}!bmx\+::block\+\_\+matrix@{bmx\+::block\+\_\+matrix}}
+\subsubsection{\texorpdfstring{write\+\_\+out\+\_\+matrix2()}{write\_out\_matrix2()}}
+{\footnotesize\ttfamily template$<$class Type = int$>$ \\
+void \mbox{\hyperlink{classbmx_1_1block__matrix}{bmx\+::block\+\_\+matrix}}$<$ Type $>$\+::write\+\_\+out\+\_\+matrix2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file block\+\_\+matrix.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/c++/block\+\_\+matrix-\/master/block\+\_\+matrix-\/master/test/include/\mbox{\hyperlink{test_2include_2block__matrix_8hpp}{block\+\_\+matrix.\+hpp}}\end{DoxyCompactItemize}
